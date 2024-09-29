@@ -17,4 +17,4 @@ class NewsSerializer(serializers.ModelSerializer):
 class ContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = Contact
-        fields = ['id', 'title', 'content', 'created_at']
+        fields = ['first_name', 'last_name', 'phone_number', 'email', 'consultation_type', 'message']
